@@ -2,3 +2,5 @@ quarantine-journal-keyfile.json
 named/
 linksIndex.txt
 outputs/
+__pycache__
+images/
