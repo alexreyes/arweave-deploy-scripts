@@ -1,4 +1,5 @@
 import os 
+import json 
 
 external_url = "https://million-dollar-nft.vercel.app/"
 description = "testing new covers"
@@ -23,5 +24,5 @@ def makeMetadata():
 		directory = "metadata/" + str(blockNum) + ".json"
 
 		writeMetadata = open(directory, "w+")
-		writeMetadata.write(str(metadata))
+		writeMetadata.write(json.dumps(metadata))
 		writeMetadata.close()
